@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<bean id="rubrica" class="it.alfasoft.viviana.Rubrica" scope="prototype">
+<property name="voci">
+
+<list>
+<ref bean="v1"/>
+<ref bean="v2"/>
+<ref bean="v3"/>
+<ref bean="v4"/>
+<ref bean="v5"/>
+</list>
+
+</property>
+</bean>
+
+<bean id="v1" class="it.alfasoft.viviana.Voce">
+<property name="nome" value="aaa"></property>
+<property name="telefono" value="111"></property>
+</bean>
+
+<bean id="v2" class="it.alfasoft.viviana.Voce">
+<property name="nome" value="bbb"></property>
+<property name="telefono" value="222"></property>
+</bean>
+
+<bean id="v3" class="it.alfasoft.viviana.Voce">
+<property name="nome" value="ccc"></property>
+<property name="telefono" value="333"></property>
+</bean>
+
+<bean id="v4" class="it.alfasoft.viviana.Voce">
+<property name="nome" value="ddd"></property>
+<property name="telefono" value="444"></property>
+</bean>
+
+<bean id="v5" class="it.alfasoft.viviana.Voce">
+<property name="nome" value="eee"></property>
+<property name="telefono" value="555"></property>
+</bean>
+
+
+
+
+
+
+
+
+
+</beans>
